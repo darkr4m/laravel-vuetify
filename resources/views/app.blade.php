@@ -5,15 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
     </head>
     <body>
-        <div id="app">
-            <router-view></router-view>
-            <hr>
-            <router-link to="/">Home</router-link>
-            <router-link to="/about">About</router-link>
-        </div>
+        <div id="app"></div>
         <script src="/js/app.js"></script>
     </body>
 </html>

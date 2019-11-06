@@ -1,6 +1,31 @@
 const mix = require('laravel-mix');
 
 mix.webpackConfig({
+    resolve: {
+        extensions: ['.js', '.vue'],
+        alias: {
+            '@': __dirname + '/resources'
+        }
+    },
+    module: {
+        rules: [
+            {
+                test: /\.s(c|a)ss$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            implementation: require('sass'),
+                            fiber: require('fibers'),
+                            indentedSyntax: true //optional
+                        }
+                    }
+                ]
+            }
+        ]
+    }
 
 });
 
