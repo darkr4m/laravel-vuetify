@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Raider extends Model
 {
     /**
-     * The table associated with the model
+     * The table associated with the Raider model
      * 
-     * @var string $table - The 
+     * @var string $table - 
      */
     protected $table = 'raiders';
 
